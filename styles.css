@@ -1,3 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Asap:wght@400;500;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Asap, sans-serif;
+}
+
 body {
-    background: black
-} 
+    background-color: blue;
+}
+
+header {
+    background: white;
+    padding: 20px;
+}
+
+header > h1 {
+    color: black;
+    text-align: center;
+}
+
+.scoreBoard {
+    margin: 20px auto;
+    border: 3px solid white;
+    border-radius: 4px; /* smoothes corners of scoreboard */
+    text-align: center;
+    width: 200px;
+    color: white;
+    font-size: 46px;
+    padding: 15px 20px; /* 15px to top & bottom, 20px to left & right */
+    position: relative;
+}
+
+.badge {
+    background: white;
+    border-radius: 4px; /* smoothes corners of badges */
+    color: black;
+    font-size: 14px;
+    padding: 2px 10px; /* 2px to top & bottom, 10px to left & right */
+}
+
+#userLabel {
+    position: absolute;
+    top: 30px;
+    left: -25px; 
+}
+
+#computerLabel {
+    position: absolute;
+    top: 30px;
+    right: -30px;
+}
+
+.result {
+    font-size: 40px;
+    color: white;
+}
+
+.result > p {
+    text-align: center;
+    font-weight: bold;
+}
+
+.choices {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.choice {
+    border: 4px solid white;
+    border-radius: 50%; /* creates circle */
+    margin: 0 20px; /* 20px to left & right */
+    padding: 15px;
+    display: inline-block;
+    transition: all 0.3s ease; /* make background color transition smoother */
+}
+
+.choice:hover {
+    cursor: pointer;
+    background: red;
+}
+
+#actionMessage {
+    text-align: center;
+    margin-top: 20px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+}

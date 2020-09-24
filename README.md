@@ -17,7 +17,13 @@ In order to play visit the link provided.
 
 ## Features
 Implemented:
-* None
+* HTML
+
+Work-in-Progress:
+* CSS
+
+To-do list:
+* JavaScript
 
 ## Status
 Project is: in progress
