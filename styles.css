@@ -7,22 +7,28 @@
 }
 
 body {
-    background-color: blue;
+    background-image: url("images/background.jpg");
+    background-color: black;
 }
 
 header {
-    background: white;
+    background: #a33327;
     padding: 20px;
 }
 
 header > h1 {
-    color: black;
+    color: #689775;
     text-align: center;
+    text-shadow: /* create outline */
+		-1px -1px 0 black,
+		1px -1px 0 black,
+		-1px 1px 0 black,
+		1px 1px 0 black;
 }
 
 .scoreBoard {
     margin: 20px auto;
-    border: 3px solid white;
+    border: 3px solid #917164;
     border-radius: 4px; /* smoothes corners of scoreboard */
     text-align: center;
     width: 200px;
@@ -33,7 +39,7 @@ header > h1 {
 }
 
 .badge {
-    background: white;
+    background: #689775;
     border-radius: 4px; /* smoothes corners of badges */
     color: black;
     font-size: 14px;
@@ -54,7 +60,7 @@ header > h1 {
 
 .result {
     font-size: 40px;
-    color: white;
+    color: #c7493a;
 }
 
 .result > p {
@@ -68,6 +74,7 @@ header > h1 {
 }
 
 .choice {
+    background-color: #917164;
     border: 4px solid white;
     border-radius: 50%; /* creates circle */
     margin: 0 20px; /* 20px to left & right */
@@ -78,13 +85,13 @@ header > h1 {
 
 .choice:hover {
     cursor: pointer;
-    background: red;
+    background:#ad8174;
 }
 
 #actionMessage {
     text-align: center;
     margin-top: 20px;
-    color: white;
+    color: #c7493a;
     font-weight: bold;
     font-size: 20px;
 }
