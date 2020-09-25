@@ -18,12 +18,11 @@ In order to play visit the link provided.
 ## Features
 Implemented:
 * HTML
-
-Work-in-Progress:
 * CSS
+* JavaScript
 
 To-do list:
-* JavaScript
+* Create web server
 
 ## Status
 Project is: in progress
