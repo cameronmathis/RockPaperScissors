@@ -6,7 +6,7 @@ This is a Web Application that allows users to play Rock Paper Scissors.
 * [Setup](#setup)
 * [Features](#features)
 * [Status](#status)
-* [Language details](#Language-details)
+* [Software details](#Software-details)
 * [Contact](#contact)
 
 ## General info
@@ -27,8 +27,7 @@ To-do list:
 ## Status
 Project is: in progress
 
-## Language details
-Languages used: CSS, HTML, JavaScript </br>
+## Software details
 
 ## Contact
 Created by [@cameronmathis](https://github.com/cameronmathis/) - feel free to contact me!
