@@ -6,7 +6,7 @@ const fs = require('fs');
 // server details
 const app = express()
 const HOSTNAME = "198.168.86.17";
-const PORT = 3001;
+const PORT = 3000;
 const server = app.listen(PORT, () => {
     console.log(`Server running at ${HOSTNAME} on port ${PORT}.`);
 });
