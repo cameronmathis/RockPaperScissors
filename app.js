@@ -1,3 +1,4 @@
+// cache the DOM
 let userScore = 0;
 let computerScore = 0;
 const userScore_span = document.getElementById("userScore");
@@ -8,6 +9,7 @@ const rock_div = document.getElementById("rock");
 const paper_div = document.getElementById("paper");
 const scissors_div = document.getElementById("scissors");
 
+// game functions
 function getComputerChoice() {
     const choices = ["rock", "paper", "scissors"];
     const randNum = Math.floor(Math.random() * 3);
@@ -62,6 +64,7 @@ function game(userChoice) {
     }
 }
 
+// listen for plays
 function main() {
     rock_div.addEventListener('click', function () {
         game("rock");
