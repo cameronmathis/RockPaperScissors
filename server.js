@@ -15,14 +15,14 @@ app.use(express.static('public'));
 var htmlFile;
 var cssFile;
 
-fs.readFile('./public/css/index.html', function (err, data) {
+fs.readFile('./public/index.html', function (err, data) {
     if (err) {
         throw err;
     }
     htmlFile = data;
 });
 
-fs.readFile('./public/css/styles.css', function (err, data) {
+fs.readFile('./public/styles.css', function (err, data) {
     if (err) {
         throw err;
     }
