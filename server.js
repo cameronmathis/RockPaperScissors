@@ -7,7 +7,7 @@ const app = express()
 const HOSTNAME = "192.168.86.17";
 const PORT = 3000;
 app.listen(PORT, () => {
-    console.log(`Server running at ${HOSTNAME} on port ${PORT}.`);
+    console.log(`Server running.`);
 });
 app.use(express.static('public'));
 
