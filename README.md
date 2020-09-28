@@ -20,6 +20,7 @@ Implemented:
 * HTML
 * CSS
 * JavaScript
+* Put App on Amazon Web Servcies
 
 To-do list:
 * Make web server accessible over other networks
