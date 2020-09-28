@@ -13,7 +13,7 @@ This is a Web Application that allows users to play Rock Paper Scissors.
 This is a project I decided I wanted to do in order to familiarize myself with Web Applications.
 
 ## Setup
-In order to play visit the link provided.
+In order to play visit [this think](http://ec2-18-216-34-190.us-east-2.compute.amazonaws.com/).
 
 ## Features
 Implemented:
@@ -23,7 +23,7 @@ Implemented:
 * Put App on Amazon Web Servcies
 
 To-do list:
-* Make web server accessible over other networks
+* Implement multiplayer feature
 
 ## Status
 Project is: in progress
