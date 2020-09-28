@@ -29,8 +29,9 @@ To-do list:
 Project is: in progress
 
 ## Software details
-The HTTP server is created using Express in Node.js in the server.js file. The server is run in a Docker container using the command:
->docker run -it -p 9000:3000 rock-paper-scissors
+The HTTP server is created using Express in Node.js in the server.js file. The following commands are used to create a docker image and spin up a container running the app:
+>docker build -t rock-paper-scissors . <br/>
+>docker run -it -p 8080:8080 rock-paper-scissors
 
 The files used on the client side are index.html, styles.css, and app.js. 
 
