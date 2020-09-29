@@ -4,7 +4,7 @@ const fs = require('fs');
 
 // server details
 const app = express()
-const HOSTNAME = "192.168.86.17";
+const HOSTNAME = "ec2-18-216-34-190.us-east-2.compute.amazonaws.com";
 const PORT = 8080;
 app.listen(PORT, () => {
     console.log(`Server running.`);

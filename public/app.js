@@ -37,7 +37,7 @@ function lose(userChoice, computerChoice) {
     setTimeout(() => userChoice_div.classList.remove("redGlow"), 500);
     computerScore++;
     computerScore_span.innerHTML = computerScore;
-    result_div.innerHTML = `${capitalizeWord(computerChoice)} beats ${capitalizeWord(userChoice)}. You lose!`;
+    result_div.innerHTML = `${capitalizeWord(computerChoice)} beats ${capitalizeWord(userChoice)}. You lose.`;
 }
 
 function draw(userChoice, computerChoice) {
