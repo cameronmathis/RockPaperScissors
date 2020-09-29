@@ -19,6 +19,7 @@
   "homepage": "https://github.com/cameronmathis/RockPaperScissors#readme",
   "dependencies": {
     "express": "^4.17.1",
+    "mssql": "^6.2.3",
     "nodemon": "^2.0.4"
   }
 }
