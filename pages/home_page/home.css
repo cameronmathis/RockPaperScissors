@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Asap:wght@400;500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Asap, sans-serif;
+}
+
+body {
+    background-image: url("../global_images/background.jpg");
+    background-color: black;
+}
+
+header {
+    background: #a33327;
+    padding: 20px;
+}
+
+header > h1 {
+    color: #689775;
+    text-align: center;
+    text-shadow: /* create outline */
+		-1px -1px 0 black,
+		1px -1px 0 black,
+		-1px 1px 0 black,
+		1px 1px 0 black;
+}
+
+.EnterUsername > h1 {
+    font-size: 60px;
+    color: #c7493a;
+    text-align: center;
+    font-weight: bold;
+    padding: 20px 20px; /* 20px to top & bottom, 20px to left & right */
+}
+
+.EnterUsername > input {
+    text-align: center;
+    font-size: 30px;
+    border-radius: 8px;
+    display: block;
+    margin: 0 auto;
+    width: 600px;
+    height: 80px;
+    background-color:  #464647;
+    border-color: black;
+    transition: all 0.3s ease; /* make background color transition smoother */
+    margin-bottom: 60px;
+}
+
+.EnterUsername > input::placeholder {
+    color: black;
+    opacity: 1; /* Firefox */
+}
+
+.EnterUsername > input:hover {
+    cursor: pointer;
+    background:#5d5d5f;
+}
+
+.actionMessage {
+    font-size: 40px;
+    color: #c7493a;
+}
+
+.actionMessage > p {
+    text-align: center;
+    font-weight: bold;
+}
+
+.choices {
+    text-align: center;
+}
+
+.choice > input {
+    text-align: center;
+    font-size: 30px;
+    border-radius: 8px;
+    background-color: #464647;
+    border-radius: 4px;
+    margin: 20px 0; /* 30px to top & bottom */
+    width: 600px;
+    height: 80px;
+    transition: all 0.3s ease; /* make background color transition smoother */
+}
+
+.choice > input::placeholder {
+    color: black;
+    opacity: 1; /* Firefox */
+}
+
+.choice > input:hover {
+    cursor: pointer;
+    background:#5d5d5f;
+}

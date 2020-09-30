@@ -9,11 +9,11 @@ const PORT = 8080;
 app.listen(PORT, () => {
     console.log(`Server running.`);
 });
-app.use(express.static('public'));
+app.use(express.static('pages'));
 
 // read html file
 var gamePageHTMLFile;
-fs.readFile('./public/game_page/game.html', function (err, data) {
+fs.readFile('./pages/game_page/game.html', function (err, data) {
     if (err) {
         throw err;
     }
