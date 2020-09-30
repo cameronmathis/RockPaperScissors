@@ -89,7 +89,7 @@ header > h1 {
     background:#ad8174;
 }
 
-#actionMessage {
+.actionMessage > p {
     text-align: center;
     margin-top: 20px;
     color: #c7493a;

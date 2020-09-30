@@ -5,6 +5,7 @@ const userScore_span = document.getElementById("userScore");
 const computerScore_span = document.getElementById("computerScore");
 const scoreBoard_div = document.querySelector(".scoreBoard");
 const result_div = document.querySelector(".result > p");
+const actionMessage_div = document.querySelector(".actionMessage > p");
 const rock_div = document.getElementById("rock");
 const paper_div = document.getElementById("paper");
 const scissors_div = document.getElementById("scissors");
@@ -44,9 +45,11 @@ function draw(userChoice, computerChoice) {
     const userChoice_div = document.getElementById(userChoice);
     userChoice_div.classList.add("greyGlow");
     setTimeout(() => userChoice_div.classList.remove("greyGlow"), 500);
+    result_div.innerHTML = `You tied.`;
 }
 
 function game(userChoice) {
+    actionMessage_div.innerHTML = `Make your move!`;
     const computerChoice = getComputerChoice();
     switch (userChoice + computerChoice) {
         case "rockscissors":
