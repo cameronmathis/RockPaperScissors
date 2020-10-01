@@ -11,7 +11,7 @@ app.listen(PORT, () => {
 });
 app.use(express.static('pages'));
 
-// read html file
+// read htmls file
 var gamePageHTMLFile;
 fs.readFile('./pages/game_page/game.html', function (err, data) {
     if (err) {
@@ -19,8 +19,29 @@ fs.readFile('./pages/game_page/game.html', function (err, data) {
     }
     gamePageHTMLFile = data;
 });
-// load html file
-app.get('/', (req, res) => {
+var homePageHTMLFile;
+fs.readFile('./pages/home_page/home.html', function (err, data) {
+    if (err) {
+        throw err;
+    }
+    homePageHTMLFile = data;
+});
+
+// load home page
+app.get('/homepage', (req, res) => {
+    res.writeHead(200, { "Content-Type": "text/html" });
+    res.status(200).write(homePageHTMLFile)
+    res.end();
+})
+
+// load game page
+app.get('/gamepage', (req, res) => {
+    res.writeHead(200, { "Content-Type": "text/html" });
+    res.status(200).write(gamePageHTMLFile)
+    res.end();
+})
+
+app.post('/gamepage', (req, res) => {
     res.writeHead(200, { "Content-Type": "text/html" });
     res.status(200).write(gamePageHTMLFile)
     res.end();

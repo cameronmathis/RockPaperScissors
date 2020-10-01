@@ -5,6 +5,11 @@ const findGame_div = document.getElementById("findGame");
 const createGame_div = document.getElementById("createGame");
 const enterCode_form = document.getElementById("enterCode");
 
+// functions
+function post (res, req) {
+    
+}
+
 // listen for plays
 function main() {
     EnterUsername_form.addEventListener('submit', function () {
@@ -13,6 +18,7 @@ function main() {
 
     solo_div.addEventListener('click', function () {
         console.log("solo game");
+        post('/gamepage');
     })
     
     findGame_div.addEventListener('click', function () {
