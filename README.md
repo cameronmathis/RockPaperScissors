@@ -13,7 +13,7 @@ This is a Web Application that allows users to play Rock Paper Scissors.
 This is a project I decided I wanted to do in order to familiarize myself with Web Applications.
 
 ## Setup
-In order to play visit [this think](http://18.216.34.190/).
+In order to play visit [this link](http://18.216.34.190/).
 
 ## Features
 Implemented:
