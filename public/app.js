@@ -55,7 +55,7 @@ function game(userChoice) {
             win(userChoice, computerChoice);
             break;
         case "rockpaper":
-        case "saperscissors":
+        case "paperscissors":
         case "scissorsrock":
             lose(userChoice, computerChoice);
             break;
