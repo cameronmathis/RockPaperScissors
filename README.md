@@ -20,13 +20,11 @@ Implemented:
 * HTML
 * CSS
 * JavaScript
-* Put App on Amazon Web Servcies
-
-To-do list:
-* Implement multiplayer feature
+* Put App on Amazon Web Services
 
 ## Status
-Project is: in progress
+Version: 1.0.1 Beta <br/>
+Project is: _finished_
 
 ## Software details
 The HTTP server is created using Express in Node.js in the server.js file. The following commands are used to create a docker image and spin up a container running the app:
