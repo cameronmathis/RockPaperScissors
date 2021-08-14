@@ -1,0 +1,12 @@
+header {
+  width: 100vw;
+  background-color: var(--clr-dark);
+  padding: 20px;
+}
+
+header > h1 {
+  color: var(--clr-accent-light);
+  text-align: center;
+  text-shadow: /* create outline */ -1px -1px 0 #000000, 1px -1px 0 #000000,
+    -1px 1px 0 #000000, 1px 1px 0 #000000;
+}

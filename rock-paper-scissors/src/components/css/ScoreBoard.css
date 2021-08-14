@@ -1,0 +1,30 @@
+.scoreBoard {
+  margin: 20px auto;
+  border: 3px solid var(--clr-accent);
+  border-radius: 4px; /* smooths corners of scoreboard */
+  text-align: center;
+  width: 200px;
+  color: white;
+  font-size: 46px;
+  padding: 15px 20px; /* 15px to top & bottom, 20px to left & right */
+  position: relative;
+}
+
+.badge {
+  width: min-content;
+  background: var(--clr-accent-light);
+  border-radius: 4px; /* smooths corners of badges */
+  color: #000000;
+  font-size: 14px;
+  padding: 2px 10px; /* 2px to top & bottom, 10px to left & right */
+  position: absolute;
+  top: 30px;
+}
+
+.user__badge {
+  left: -25px;
+}
+
+.comp__badge {
+  right: -30px;
+}

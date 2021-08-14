@@ -1,0 +1,9 @@
+.result {
+  font-size: 40px;
+  color: var(--clr-accent-dark);
+}
+
+.result > p {
+  text-align: center;
+  font-weight: bold;
+}
