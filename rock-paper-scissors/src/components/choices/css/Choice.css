@@ -11,7 +11,6 @@
 .choice:hover,
 .choice:hover > img {
   cursor: pointer;
-  opacity: 75%;
 }
 
 .greenGlow {
