@@ -8,7 +8,8 @@
   transition: all 0.3s ease; /* make background color transition smoother */
 }
 
-.choice:hover {
+.choice:hover,
+.choice:hover > img {
   cursor: pointer;
   opacity: 75%;
 }
