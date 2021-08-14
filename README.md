@@ -6,7 +6,6 @@ This is a React Web Application that allows users to play Rock Paper Scissors.
 
 - [General info](#general-info)
 - [Setup](#setup)
-- [Features](#features)
 - [Status](#status)
 - [Software details](#Software-details)
 - [Contact](#contact)
@@ -18,10 +17,6 @@ This is a project I decided I wanted to do in order to practice developing React
 ## Setup
 
 In order to play visit [this think]().
-
-## Features
-
-Implemented:
 
 ## Status
 
