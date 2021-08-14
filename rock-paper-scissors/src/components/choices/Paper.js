@@ -4,16 +4,20 @@ import paper from "../../images/paper.png";
 // import css
 import "./css/Choice.css";
 
-const Paper = ({ setUserChoice, getResult }) => {
+const Paper = ({ setUserChoice, getResult, border }) => {
   const setChoice = () => {
     setUserChoice("paper");
     getResult();
   };
 
+  const styles = {
+    border: border,
+  };
+
   return (
-    <button onClick={setChoice} className="choice">
+    <div onClick={setChoice} className="choice" style={styles}>
       <img src={paper} alt="" />
-    </button>
+    </div>
   );
 };
 

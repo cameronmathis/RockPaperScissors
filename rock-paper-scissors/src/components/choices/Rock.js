@@ -4,16 +4,20 @@ import rock from "../../images/rock.png";
 // import css
 import "./css/Choice.css";
 
-const Rock = ({ setUserChoice, getResult }) => {
+const Rock = ({ setUserChoice, getResult, border }) => {
   const setChoice = () => {
     setUserChoice("rock");
     getResult();
   };
 
+  const styles = {
+    border: border,
+  };
+
   return (
-    <button onClick={setChoice} className="choice">
+    <div onClick={setChoice} className="choice" style={styles}>
       <img src={rock} alt="" />
-    </button>
+    </div>
   );
 };
 
