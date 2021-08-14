@@ -12,7 +12,7 @@ function getResponse(result) {
       rslt = "You lose.";
       break;
     default:
-      rslt = "Make your move!";
+      rslt = "Draw!";
   }
   return rslt;
 }

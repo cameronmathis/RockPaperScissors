@@ -1,20 +1,20 @@
 import React from "react";
 // import images
-import rock from "../images/rock.png";
+import paper from "../../images/paper.png";
 // import css
 import "./css/Choice.css";
 
-const Rock = ({ setUserChoice, getResult }) => {
+const Paper = ({ setUserChoice, getResult }) => {
   const setChoice = () => {
-    setUserChoice("rock");
+    setUserChoice("paper");
     getResult();
   };
 
   return (
     <button onClick={setChoice} className="choice">
-      <img src={rock} alt="" />
+      <img src={paper} alt="" />
     </button>
   );
 };
 
-export default Rock;
+export default Paper;

@@ -1,8 +1,8 @@
 import React from "react";
 // import components
-import Rock from "./Rock.js";
-import Paper from "./Paper.js";
-import Scissors from "./Scissors.js";
+import Rock from "./choices/Rock.js";
+import Paper from "./choices/Paper.js";
+import Scissors from "./choices/Scissors.js";
 // import css
 import "./css/Game.css";
 
