@@ -1,7 +1,14 @@
 import React from "react";
+// import components
+import Rock from "./Rock.js";
+import Paper from "./Paper.js";
+import Scissors from "./Scissors.js";
+// import css
+import "./css/Game.css";
 
 const Game = ({
   userChoice,
+  setUserChoice,
   userScore,
   setUserScore,
   compScore,
@@ -33,7 +40,13 @@ const Game = ({
     }
   };
 
-  return <div>{getResult}</div>;
+  return (
+    <div className="game">
+      <Rock setUserChoice={setUserChoice} getResult={getResult} />
+      <Paper setUserChoice={setUserChoice} getResult={getResult} />
+      <Scissors setUserChoice={setUserChoice} getResult={getResult} />
+    </div>
+  );
 };
 
 export default Game;

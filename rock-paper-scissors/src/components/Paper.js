@@ -4,9 +4,10 @@ import paper from "../images/paper.png";
 // import css
 import "./css/Choice.css";
 
-const Paper = ({ setUserChoice }) => {
+const Paper = ({ setUserChoice, getResult }) => {
   const setChoice = () => {
     setUserChoice("paper");
+    getResult();
   };
 
   return (

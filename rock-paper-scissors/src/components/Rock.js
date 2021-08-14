@@ -4,9 +4,10 @@ import rock from "../images/rock.png";
 // import css
 import "./css/Choice.css";
 
-const Rock = ({ setUserChoice }) => {
+const Rock = ({ setUserChoice, getResult }) => {
   const setChoice = () => {
     setUserChoice("rock");
+    getResult();
   };
 
   return (
