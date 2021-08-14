@@ -4,12 +4,16 @@ import scissors from "../images/scissors.png";
 // import css
 import "./css/Choice.css";
 
-function Scissors() {
+const Scissors = ({ setUserChoice }) => {
+  const setChoice = () => {
+    setUserChoice("scissors");
+  };
+
   return (
-    <div className="choice choice-scissors">
+    <div onClick={setChoice} className="choice">
       <img src={scissors} alt="" />
     </div>
   );
-}
+};
 
 export default Scissors;

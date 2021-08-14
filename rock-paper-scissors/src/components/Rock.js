@@ -4,12 +4,16 @@ import rock from "../images/rock.png";
 // import css
 import "./css/Choice.css";
 
-function Rock() {
+const Rock = ({ setUserChoice }) => {
+  const setChoice = () => {
+    setUserChoice("rock");
+  };
+
   return (
-    <div className="choice choice-rock">
+    <button onClick={setChoice} className="choice">
       <img src={rock} alt="" />
-    </div>
+    </button>
   );
-}
+};
 
 export default Rock;

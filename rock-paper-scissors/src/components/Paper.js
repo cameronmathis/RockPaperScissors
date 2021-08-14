@@ -4,12 +4,16 @@ import paper from "../images/paper.png";
 // import css
 import "./css/Choice.css";
 
-function Paper() {
+const Paper = ({ setUserChoice }) => {
+  const setChoice = () => {
+    setUserChoice("paper");
+  };
+
   return (
-    <div className="choice choice-paper">
+    <button onClick={setChoice} className="choice">
       <img src={paper} alt="" />
-    </div>
+    </button>
   );
-}
+};
 
 export default Paper;
