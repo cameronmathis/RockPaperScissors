@@ -9,7 +9,6 @@ import ActionMessage from "./components/ActionMessage.js";
 import "./css/App.css";
 
 function App() {
-  const [userChoice, setUserChoice] = useState("");
   const [userScore, setUserScore] = useState(0);
   const [compScore, setCompScore] = useState(0);
   const [result, setResult] = useState("");
@@ -20,8 +19,6 @@ function App() {
       <ScoreBoard userScore={userScore} compScore={compScore} />
       <Result result={result} />
       <Game
-        userChoice={userChoice}
-        setUserChoice={setUserChoice}
         userScore={userScore}
         setUserScore={setUserScore}
         compScore={compScore}

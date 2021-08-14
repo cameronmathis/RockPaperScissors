@@ -4,10 +4,9 @@ import scissors from "../../images/scissors.png";
 // import css
 import "./css/Choice.css";
 
-const Scissors = ({ setUserChoice, getResult, border }) => {
+const Scissors = ({ getResult, border }) => {
   const setChoice = () => {
-    setUserChoice("scissors");
-    getResult();
+    getResult("scissors");
   };
 
   const styles = {

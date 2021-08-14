@@ -7,8 +7,6 @@ import Scissors from "./choices/Scissors.js";
 import "./css/Game.css";
 
 const Game = ({
-  userChoice,
-  setUserChoice,
   userScore,
   setUserScore,
   compScore,
@@ -26,9 +24,9 @@ const Game = ({
     return choices[Math.floor(Math.random() * 3)];
   }
 
-  function setBorderColor(result, choice) {
+  function setBorderColor(result, userChoice) {
     if (result === "win") {
-      switch (choice) {
+      switch (userChoice) {
         case "rock": {
           setRockBorder("4px solid var(--clr-accent-light)");
           setTimeout(() => setRockBorder("4px solid var(--clr-light)"), 500);
@@ -49,7 +47,7 @@ const Game = ({
         }
       }
     } else if (result === "lose") {
-      switch (choice) {
+      switch (userChoice) {
         case "rock": {
           setRockBorder("4px solid var(--clr-dark)");
           setTimeout(() => setRockBorder("4px solid var(--clr-light)"), 500);
@@ -70,7 +68,7 @@ const Game = ({
         }
       }
     } else {
-      switch (choice) {
+      switch (userChoice) {
         case "rock": {
           setRockBorder("4px solid #464647");
           setTimeout(() => setRockBorder("4px solid var(--clr-light)"), 500);
@@ -93,47 +91,34 @@ const Game = ({
     }
   }
 
-  const getResult = () => {
-    const choice = userChoice;
+  const getResult = (userChoice) => {
     const compChoice = getCompChoice();
-    switch (choice + "-" + compChoice) {
+    switch (userChoice + "-" + compChoice) {
       case "rock-scissors":
       case "paper-rock":
       case "scissors-paper":
         setResult("win");
-        setBorderColor("win", choice);
+        setBorderColor("win", userChoice);
         setUserScore(userScore + 1);
         break;
       case "rock-paper":
       case "paper-scissors":
       case "scissors-rock":
         setResult("lose");
-        setBorderColor("lose", choice);
+        setBorderColor("lose", userChoice);
         setCompScore(compScore + 1);
         break;
       default:
         setResult("draw");
-        setBorderColor("draw", choice);
+        setBorderColor("draw", userChoice);
     }
   };
 
   return (
     <div className="game">
-      <Rock
-        setUserChoice={setUserChoice}
-        getResult={getResult}
-        border={rockBorder}
-      />
-      <Paper
-        setUserChoice={setUserChoice}
-        getResult={getResult}
-        border={paperBorder}
-      />
-      <Scissors
-        setUserChoice={setUserChoice}
-        getResult={getResult}
-        border={scissorsBorder}
-      />
+      <Rock getResult={getResult} border={rockBorder} />
+      <Paper getResult={getResult} border={paperBorder} />
+      <Scissors getResult={getResult} border={scissorsBorder} />
     </div>
   );
 };
