@@ -1,11 +1,12 @@
 import React, { useState } from "react";
-// import components
-import Header from "./components/Header.js";
-import ScoreBoard from "./components/ScoreBoard.js";
-import Result from "./components/Result.js";
-import Game from "./components/Game.js";
-import ActionMessage from "./components/ActionMessage.js";
-// import css
+
+import ActionMessage from "./components/ActionMessage";
+import Footer from "./components/Footer";
+import Game from "./components/Game";
+import Header from "./components/Header";
+import Result from "./components/Result";
+import ScoreBoard from "./components/ScoreBoard";
+
 import "./css/App.css";
 
 function App() {
@@ -26,6 +27,7 @@ function App() {
         setResult={setResult}
       />
       <ActionMessage />
+      <Footer />
     </div>
   );
 }

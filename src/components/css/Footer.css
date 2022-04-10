@@ -1,0 +1,18 @@
+.footer {
+  position: fixed;
+  bottom: 0;
+  width: 100vw;
+  display: flex;
+  -webkit-box-align: center;
+  justify-content: center;
+  align-items: center;
+  height: 6vh;
+  background-color: var(--clr-dark);
+  padding: 5px;
+}
+
+.item,
+.item:hover {
+  color: var(--clr-accent-light);
+  padding: 0 1vw;
+}

@@ -1,5 +1,5 @@
 import React from "react";
-// import css
+
 import "./css/ScoreBoard.css";
 
 const ScoreBoard = ({ userScore, compScore }) => {

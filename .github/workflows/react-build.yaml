@@ -1,0 +1,31 @@
+name: React Build
+
+on:
+  push:
+    branches: [main, develop]
+  pull_request:
+    # The branches below must be a subset of the branches above
+    branches: [main, develop]
+
+jobs:
+  build:
+    name: Build
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Install Node.js
+        uses: actions/setup-node@v1
+        with:
+          node-version: 14.x
+
+      - name: Install NPM packages
+        run: npm ci
+
+      - name: Build project
+        run: CI=false npm run build
+
+      - name: Run tests
+        run: npm run test

@@ -1,9 +1,9 @@
 import React, { useState } from "react";
-// import components
-import Rock from "./choices/Rock.js";
-import Paper from "./choices/Paper.js";
-import Scissors from "./choices/Scissors.js";
-// import css
+
+import Paper from "./choices/Paper.jsx";
+import Rock from "./choices/Rock.jsx";
+import Scissors from "./choices/Scissors.jsx";
+
 import "./css/Game.css";
 
 const Game = ({

@@ -1,4 +1,4 @@
-### [Play Online](https://rockpaperscissors-cameronmathis.azurewebsites.net/)
+### [Play Online](https://cameronmathis.github.io/RockPaperScissors/)
 
 # RockPaperScissors-React
 
@@ -18,7 +18,7 @@ This is a project I decided I wanted to do in order to practice developing React
 
 ## Setup
 
-In order to play visit [this think](https://rockpaperscissors-cameronmathis.azurewebsites.net/).
+In order to play visit [this think](https://cameronmathis.github.io/RockPaperScissors/).
 
 ## Status
 

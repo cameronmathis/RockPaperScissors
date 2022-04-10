@@ -1,12 +1,12 @@
 import React from "react";
-// import images
-import scissors from "../../images/scissors.png";
-// import css
+
+import rock from "../../images/rock.png";
+
 import "./css/Choice.css";
 
-const Scissors = ({ getResult, border }) => {
+const Rock = ({ getResult, border }) => {
   const setChoice = () => {
-    getResult("scissors");
+    getResult("rock");
   };
 
   const styles = {
@@ -15,9 +15,9 @@ const Scissors = ({ getResult, border }) => {
 
   return (
     <div onClick={setChoice} className="choice" style={styles}>
-      <img src={scissors} alt="" />
+      <img src={rock} alt="" />
     </div>
   );
 };
 
-export default Scissors;
+export default Rock;

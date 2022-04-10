@@ -1,7 +1,7 @@
 import React from "react";
-// import images
+
 import paper from "../../images/paper.png";
-// import css
+
 import "./css/Choice.css";
 
 const Paper = ({ getResult, border }) => {
